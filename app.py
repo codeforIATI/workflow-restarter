@@ -6,9 +6,9 @@ import requests
 
 def request(method, path, prefix="https://api.github.com/repos/",
             sleep=0.5, **kwargs):
-    headers = {
-        'Authorization': 'token {}'.format(
-            environ.get("GH_TOKEN"))}
+    headers = kwargs.get("headers", {})
+    headers["Authorization"] = "token {}".format(
+        environ.get("GH_TOKEN"))
     resp = requests.request(method, prefix + path, headers=headers, **kwargs)
     resp.raise_for_status()
     time.sleep(sleep)
