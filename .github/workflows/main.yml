@@ -2,7 +2,7 @@ name: Restart stopped workflows
 
 on:
   schedule:
-    - cron:  '15 * * * *'
+    - cron:  '0 */6 * * *'
 jobs:
   run:
     name: Restart stopped workflows
