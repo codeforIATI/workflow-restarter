@@ -39,7 +39,7 @@ jobs:
           git config --global user.name "Code for IATI bot"
           git commit --amend --no-edit
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@21d44fe9270fd489e49fb30c9590d40adb3abc40
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           branch: main
