@@ -19,3 +19,4 @@ https://github.com/codeforIATI/status
 https://github.com/codeforIATI/traceability-graph
 https://github.com/codeforIATI/validator
 https://github.com/datasets/dac-and-crs-code-lists
+https://github.com/codeforIATI/sweden-contributions
